@@ -559,6 +559,8 @@
 		} else if (days == 0) {
 			document.getElementById("name").innerHTML = `N5 Spanish - Today`;
 		}
+
+		fetch('https://qwk.pythonanywhere.com/l/sqa-n5-spanish').catch(() => {});
 	</script>
 </body>
 </html>

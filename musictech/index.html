@@ -559,6 +559,8 @@
 		} else if (days == 0) {
 			document.getElementById("name").innerHTML = `N5 Music Technology - Today`;
 		}
+
+		fetch('https://qwk.pythonanywhere.com/l/sqa-n5-musictech').catch(() => {});
 	</script>
 </body>
 </html>

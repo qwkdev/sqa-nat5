@@ -559,6 +559,8 @@
 		} else if (days == 0) {
 			document.getElementById("name").innerHTML = `N5 Cantonese - Today`;
 		}
+
+		fetch('https://qwk.pythonanywhere.com/l/sqa-n5-canto').catch(() => {});
 	</script>
 </body>
 </html>
