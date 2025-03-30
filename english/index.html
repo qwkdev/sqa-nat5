@@ -534,7 +534,8 @@
 			Other uses require explicit permission from the SQA.<br>
 			SQA.MY provides these files for educational use only, and not for commercial gain.<br>
 			Nor does claim ownership or copyright of said files.<br>
-			All rights go to their respective owners.
+			All rights go to their respective owners.<br><br>
+			<span id="visits">Loading visits...</span>
 		</p>
 
 		<div id="fade-wrap"><div id="table-wrap">
@@ -560,7 +561,15 @@
 			document.getElementById("name").innerHTML = `N5 English - Today`;
 		}
 
-		fetch('https://qwk.pythonanywhere.com/l/sqa-n5-english').catch(() => {});
+		fetch('https://qwk.pythonanywhere.com/l/sqa-n5-english', { method: 'GET' })
+			.then(response => response.json())
+			.then(data => {
+				document.getElementById('visits').innerText = `This page has been visited ${data['visits']} times`;
+			})
+			.catch(error => {
+				document.getElementById('visits').innerText = `Couldn't load visits`;
+				console.error('Error fetching visits:', error)
+			});
 	</script>
 </body>
 </html>
