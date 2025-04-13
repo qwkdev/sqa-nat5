@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 	<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyBzdHlsZT0ic3Ryb2tlOiAjZmZmOyBmaWxsOiAjZmZmOyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTc2IDUxMiI+PHBhdGggZD0iTTQxMy41IDIzNy41Yy0yOC4yIDQuOC01OC4yLTMuNi04MC0yNS40bC0zOC4xLTM4LjFDMjgwLjQgMTU5IDI3MiAxMzguOCAyNzIgMTE3LjZsMC0xMi4xTDE5Mi4zIDYyYy01LjMtMi45LTguNi04LjYtOC4zLTE0LjdzMy45LTExLjUgOS41LTE0bDQ3LjItMjFDMjU5LjEgNC4yIDI3OSAwIDI5OS4yIDBsMTguMSAwYzM2LjcgMCA3MiAxNCA5OC43IDM5LjFsNDQuNiA0MmMyNC4yIDIyLjggMzMuMiA1NS43IDI2LjYgODZMNTAzIDE4M2w4LThjOS40LTkuNCAyNC42LTkuNCAzMy45IDBsMjQgMjRjOS40IDkuNCA5LjQgMjQuNiAwIDMzLjlsLTg4IDg4Yy05LjQgOS40LTI0LjYgOS40LTMzLjkgMGwtMjQtMjRjLTkuNC05LjQtOS40LTI0LjYgMC0zMy45bDgtOC0xNy41LTE3LjV6TTI3LjQgMzc3LjFMMjYwLjkgMTgyLjZjMy41IDQuOSA3LjUgOS42IDExLjggMTRsMzguMSAzOC4xYzYgNiAxMi40IDExLjIgMTkuMiAxNS43TDEzNC45IDQ4NC42Yy0xNC41IDE3LjQtMzYgMjcuNC01OC42IDI3LjRDMzQuMSA1MTIgMCA0NzcuOCAwIDQzNS43YzAtMjIuNiAxMC4xLTQ0LjEgMjcuNC01OC42eiIvPjwvc3ZnPg==" type="image/svg+xml">
+
+	<meta property="og:image" content="https://og.tailgraph.com/og?fontFamily=Montserrat&title=N5 Design and Manufacture Past Papers&titleTailwind=font-bold%20text-6xl%20text-white&text=Past%20papers%20from%20the%20largest%20archive%20of%20SQA%20past%20papers&textTailwind=text-2xl%20mt-4%20bg-blueGray-300%20text-gray-300&logoUrl=&logoTailwind=h-8&bgTailwind=bg-black&footer=sqa.my&footerTailwind=text-blue-400%20text-3xl&t=1744575448853&refresh=1">
+	
 	<title>N5 Design and Manufacture Past Papers | SQA.MY</title>
 	<style>
 		body {
@@ -641,29 +644,29 @@
 	</style>
 </head>
 <body>
-	<div id="top">
-		<a href="https://sqa.my/">
+	<header id="top" role="banner" aria-label="Site Logo and Navigation">
+		<a href="https://sqa.my/" aria-label="Home Page" title="Home">
 			<div id="logo">
 				<h1>sqa.my</h1>
 			</div>
 		</a>
-		<div id="search">
-			<a href="https://nat5.sqa.my/">N5</a>
-			<a href="https://higher.sqa.my/">H</a>
-			<a href="https://ah.sqa.my/">AH</a>
-		</div>
-		<div id="icon" onclick="toggleSearch()">
+		<nav id="search" aria-label="Qualification Level Selection">
+			<a href="https://nat5.sqa.my/" aria-label="National 5 Papers" title="National 5">N5</a>
+			<a href="https://higher.sqa.my/" aria-label="Higher Papers" title="Higher">H</a>
+			<a href="https://ah.sqa.my/" aria-label="Advanced Higher Papers" title="Advanced Higher">AH</a>
+		</nav>
+		<div id="icon" onclick="toggleSearch()" aria-label="Toggle Search">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M413.5 237.5c-28.2 4.8-58.2-3.6-80-25.4l-38.1-38.1C280.4 159 272 138.8 272 117.6l0-12.1L192.3 62c-5.3-2.9-8.6-8.6-8.3-14.7s3.9-11.5 9.5-14l47.2-21C259.1 4.2 279 0 299.2 0l18.1 0c36.7 0 72 14 98.7 39.1l44.6 42c24.2 22.8 33.2 55.7 26.6 86L503 183l8-8c9.4-9.4 24.6-9.4 33.9 0l24 24c9.4 9.4 9.4 24.6 0 33.9l-88 88c-9.4 9.4-24.6 9.4-33.9 0l-24-24c-9.4-9.4-9.4-24.6 0-33.9l8-8-17.5-17.5zM27.4 377.1L260.9 182.6c3.5 4.9 7.5 9.6 11.8 14l38.1 38.1c6 6 12.4 11.2 19.2 15.7L134.9 484.6c-14.5 17.4-36 27.4-58.6 27.4C34.1 512 0 477.8 0 435.7c0-22.6 10.1-44.1 27.4-58.6z"/></svg>
 		</div>
 
 		<div id="finder" style="visibility: hidden; --width: 0;">
-			<input style="opacity: 0;" type="text" id="query" placeholder="Search...">
+			<input style="opacity: 0;" type="text" id="query" placeholder="Search..." aria-label="Past Paper Subject Search">
 		</div>
 		<div id="results" style="visibility: hidden;"></div>
-	</div>
+	</header>
 
-	<div id="main">
-		<h1 id="name">N5 Design and Manufacture</h1>
+	<section id="main" aria-label="Page Content">
+		<h1 id="name" aria-label="Subject Name">N5 Design and Manufacture</h1>
 		<p>
 			Archive of SQA past papers and resources<br>
 			The provided files are exclusively for supporting the studies of SQA qualifications.<br>
@@ -674,19 +677,19 @@
 			<span id="visits">Loading visits...</span>
 		</p>
 
-		<div id="fade-wrap"><div id="table-wrap">
-			<table>
-<tr><th>Year</th><th>Paper</th><th>Marking</th><th>Assignment</th><th></th><th></th><th></th><th></th></tr><tr><td>2024</td><td><a href="/dm/2024/N5_D&M_2024_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2024/N5_D&M_2024_Marking.pdf" target="_blank">Marking</a></td><td><a href="/dm/2024/N5_D&M_2024_Assignment_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2024/N5_D&M_2024_Assignment_Planning.pdf" target="_blank">Planning</a></td><td><a href="/dm/2024/N5_D&M_2024_Assignment_Research1.pdf" target="_blank">Research 1</a></td><td><a href="/dm/2024/N5_D&M_2024_Assignment_Research2.pdf" target="_blank">Research 2</a></td><td><a href="/dm/2024/N5_D&M_2024_Assignment_Research3.pdf" target="_blank">Research 3</a></td></tr><tr><td>2023</td><td><a href="/dm/2023/N5_D&M_2023_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2023/N5_D&M_2023_Marking.pdf" target="_blank">Marking</a></td><td><a href="/dm/2023/N5_D&M_2023_Assignment_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2023/N5_D&M_2023_Assignment_Planning.pdf" target="_blank">Planning</a></td><td><a href="/dm/2023/N5_D&M_2023_Assignment_Research1.pdf" target="_blank">Research 1</a></td><td><a href="/dm/2023/N5_D&M_2023_Assignment_Research2.pdf" target="_blank">Research 2</a></td><td><a href="/dm/2023/N5_D&M_2023_Assignment_Research3.pdf" target="_blank">Research 3</a></td></tr><tr><td>2022</td><td><a href="/dm/2022/N5_D&M_2022_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2022/N5_D&M_2022_Marking.pdf" target="_blank">Marking</a></td><td><a href="/dm/2022/N5_D&M_2022_Assignment_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2022/N5_D&M_2022_Assignment_Planning.pdf" target="_blank">Planning</a></td><td><a href="/dm/2022/N5_D&M_2022_Assignment_Research1.pdf" target="_blank">Research 1</a></td><td><a href="/dm/2022/N5_D&M_2022_Assignment_Research2.pdf" target="_blank">Research 2</a></td><td><a href="/dm/2022/N5_D&M_2022_Assignment_Research3.pdf" target="_blank">Research 3</a></td></tr><tr><td>2021</td><td><a href="/dm/2021/N5_D&M_2021_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2021/N5_D&M_2021_Marking.pdf" target="_blank">Marking</a></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>2019</td><td><a href="/dm/2019/N5_D&M_2019_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2019/N5_D&M_2019_Marking.pdf" target="_blank">Marking</a></td><td></td><td></td><td></td><td></td><td></td></tr>
+		<div id="fade-wrap"><main id="table-wrap" aria-label="Past Paper Section">
+			<table aria-label="Past Papers">
+<thead><tr><th>Year</th><th>Paper</th><th>Marking</th><th>Assignment</th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>2024</td><td><a href="/dm/2024/N5_D&M_2024_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2024/N5_D&M_2024_Marking.pdf" target="_blank">Marking</a></td><td><a href="/dm/2024/N5_D&M_2024_Assignment_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2024/N5_D&M_2024_Assignment_Planning.pdf" target="_blank">Planning</a></td><td><a href="/dm/2024/N5_D&M_2024_Assignment_Research1.pdf" target="_blank">Research 1</a></td><td><a href="/dm/2024/N5_D&M_2024_Assignment_Research2.pdf" target="_blank">Research 2</a></td><td><a href="/dm/2024/N5_D&M_2024_Assignment_Research3.pdf" target="_blank">Research 3</a></td></tr><tr><td>2023</td><td><a href="/dm/2023/N5_D&M_2023_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2023/N5_D&M_2023_Marking.pdf" target="_blank">Marking</a></td><td><a href="/dm/2023/N5_D&M_2023_Assignment_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2023/N5_D&M_2023_Assignment_Planning.pdf" target="_blank">Planning</a></td><td><a href="/dm/2023/N5_D&M_2023_Assignment_Research1.pdf" target="_blank">Research 1</a></td><td><a href="/dm/2023/N5_D&M_2023_Assignment_Research2.pdf" target="_blank">Research 2</a></td><td><a href="/dm/2023/N5_D&M_2023_Assignment_Research3.pdf" target="_blank">Research 3</a></td></tr><tr><td>2022</td><td><a href="/dm/2022/N5_D&M_2022_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2022/N5_D&M_2022_Marking.pdf" target="_blank">Marking</a></td><td><a href="/dm/2022/N5_D&M_2022_Assignment_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2022/N5_D&M_2022_Assignment_Planning.pdf" target="_blank">Planning</a></td><td><a href="/dm/2022/N5_D&M_2022_Assignment_Research1.pdf" target="_blank">Research 1</a></td><td><a href="/dm/2022/N5_D&M_2022_Assignment_Research2.pdf" target="_blank">Research 2</a></td><td><a href="/dm/2022/N5_D&M_2022_Assignment_Research3.pdf" target="_blank">Research 3</a></td></tr><tr><td>2021</td><td><a href="/dm/2021/N5_D&M_2021_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2021/N5_D&M_2021_Marking.pdf" target="_blank">Marking</a></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>2019</td><td><a href="/dm/2019/N5_D&M_2019_Paper.pdf" target="_blank">Paper</a></td><td><a href="/dm/2019/N5_D&M_2019_Marking.pdf" target="_blank">Marking</a></td><td></td><td></td><td></td><td></td><td></td></tr></tbody>
 			</table>
-		</div></div>
-	</div>
-	<div id="bottom">
+		</main></div>
+	</section>
+	<footer id="bottom" aria-label="Disclaimer and contact links">
 		<h1>SQA.MY</h1>
 		<p>SQA.MY is not affiliated with, endorsed by, or associated with the Scottish Qualifications Authority (SQA)</p>
-		<h2>Made by <span><a href="https://qwkdev.github.io" target="_blank">qwk<span class="underline"></span></a></span></h2>
-		<a id="contact" href="https://qwk.pythonanywhere.com/contact?ref=SQA" target="_blank">Contact</a>
-		<a id="report" href="https://qwk.pythonanywhere.com/contact?ref=SQA-Report" target="_blank">Report</a>
-	</div>
+		<h2>Made by <span><a href="https://qwkdev.github.io" target="_blank" aria-label="Site Author">qwk<span class="underline"></span></a></span></h2>
+		<a id="contact" aria-label="General Contact" href="https://qwk.pythonanywhere.com/contact?ref=SQA" target="_blank">Contact</a>
+		<a id="report" aria-label="Report" href="https://qwk.pythonanywhere.com/contact?ref=SQA-Report" target="_blank">Report</a>
+	</footer>
 
 	<script>
 		var time = new Date("13 May, 2025 00:00:00").getTime() - new Date().getTime();

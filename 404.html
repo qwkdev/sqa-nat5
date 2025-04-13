@@ -525,26 +525,28 @@
 	</style>
 </head>
 <body>
-	<div id="top">
-		<div id="logo">
-			<h1>sqa.my</h1>
-		</div>
-		<div id="search">
-			<a href="https://nat5.sqa.my/">N5</a>
-			<a href="https://higher.sqa.my/">H</a>
-			<a href="https://ah.sqa.my/">AH</a>
-		</div>
-		<div id="icon" onclick="toggleSearch()">
+	<header id="top" role="banner" aria-label="Site Logo and Navigation">
+		<a href="https://sqa.my/" aria-label="Home Page" title="Home">
+			<div id="logo">
+				<h1>sqa.my</h1>
+			</div>
+		</a>
+		<nav id="search" aria-label="Qualification Level Selection">
+			<a href="https://nat5.sqa.my/" aria-label="National 5 Papers" title="National 5">N5</a>
+			<a href="https://higher.sqa.my/" aria-label="Higher Papers" title="Higher">H</a>
+			<a href="https://ah.sqa.my/" aria-label="Advanced Higher Papers" title="Advanced Higher">AH</a>
+		</nav>
+		<div id="icon" onclick="toggleSearch()" aria-label="Toggle Search">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
 		</div>
 
 		<div id="finder" style="visibility: hidden; --width: 0;">
-			<input style="opacity: 0;" type="text" id="query" placeholder="Search...">
+			<input style="opacity: 0;" type="text" id="query" placeholder="Search..." aria-label="Past Paper Subject Search">
 		</div>
 		<div id="results" style="visibility: hidden;"></div>
-	</div>
+	</header>
 	
-	<div id="main">
+	<main id="main" role="main" aria-label="Main Content">
 		<h1 id="name">Error 404</h1>
 		<p id="description">
 			We couldn't find the page you were looking for.<br>
@@ -553,14 +555,14 @@
 			If you came accross this page normally, please let us know using the "Report" button below.<br><br>
 			<span id="visits">Loading visits...</span>
 		</p>
-	</div>
-	<div id="bottom">
+	</main>
+	<footer id="bottom" aria-label="Disclaimer and contact links">
 		<h1>SQA.MY</h1>
 		<p>SQA.MY is not affiliated with, endorsed by, or associated with the Scottish Qualifications Authority (SQA)</p>
-		<h2>Made by <span><a href="https://qwkdev.github.io" target="_blank">qwk<span class="underline"></span></a></span></h2>
-		<a id="contact" href="https://qwk.pythonanywhere.com/contact?ref=SQA" target="_blank">Contact</a>
-		<a id="report" href="https://qwk.pythonanywhere.com/contact?ref=SQA-Report" target="_blank">Report</a>
-	</div>
+		<h2>Made by <span><a href="https://qwkdev.github.io" target="_blank" aria-label="Site Author">qwk<span class="underline"></span></a></span></h2>
+		<a id="contact" aria-label="General Contact" href="https://qwk.pythonanywhere.com/contact?ref=SQA" target="_blank">Contact</a>
+		<a id="report" aria-label="Report" href="https://qwk.pythonanywhere.com/contact?ref=SQA-Report" target="_blank">Report</a>
+	</footer>
 
 	<script>
 		const finder = document.getElementById('finder');
