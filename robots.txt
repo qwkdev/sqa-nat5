@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://nat5.sqa.my/sitemap.xml
